@@ -1,6 +1,12 @@
-body {
-    font-size: 20px;
-    div {
-        font-size: 10px;
+.row {
+    display: flex;
+    background: #000;
+    &__column {
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        width: 50px;
+        margin: 5px;
+        background-color: rgb(79, 165, 53);
     }
 }
