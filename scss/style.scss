@@ -1,12 +1,16 @@
-.row {
-    display: flex;
-    background: #000;
-    &__column {
-        display: flex;
-        flex-direction: column;
-        height: 20px;
-        width: 50px;
-        margin: 5px;
-        background-color: rgb(79, 165, 53);
-    }
+$fontfamily: 'lato';
+
+$minwidth: 320px;
+
+@import '_null';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+.wraper {
+	overflow: hidden;
+	min-height: 100%;
+}
+.container {
+	max-width: 1130px;
+	padding: 0 15px;
 }
