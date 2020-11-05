@@ -1,0 +1,8 @@
+@mixin flexbox() {
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-box;
+	font-size: 0;
+}

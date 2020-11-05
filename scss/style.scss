@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 $fontfamily: 'lato';
 
 $minwidth: 320px;
 
 @import '_null';
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import '_ui';
+
+@import '_mixins';
 
 .wraper {
 	overflow: hidden;
@@ -13,4 +17,27 @@ $minwidth: 320px;
 .container {
 	max-width: 1130px;
 	padding: 0 15px;
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	@include flexbox();
+	flex-direction: column;
+}
+.main-screen {
+	flex: 1 0 100%;
+	position: relative;
+	&__bg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.content {
 }
