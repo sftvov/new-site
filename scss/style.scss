@@ -10,6 +10,8 @@ $minwidth: 320px;
 
 @import '_mixins';
 
+@import '_header';
+
 .wraper {
 	overflow: hidden;
 	min-height: 100%;
