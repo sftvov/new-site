@@ -1,0 +1,21 @@
+/*examples*/
+body {
+	width: 600px;
+	height: 600px;
+}
+
+.big {
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+.small {
+	position: relative;
+	top: 100px;
+	width: 500px;
+	height: 500px;
+	background: #666;
+}

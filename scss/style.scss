@@ -10,8 +10,7 @@ $minwidth: 320px;
 
 @import '_mixins';
 
-@import '_header';
-
+/*main*/
 .wraper {
 	overflow: hidden;
 	min-height: 100%;
@@ -43,3 +42,7 @@ $minwidth: 320px;
 }
 .content {
 }
+
+@import '_header';
+
+@import '_examples';

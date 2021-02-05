@@ -1,6 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
-/*Обнуление*/
+/*null*/
 * {
   padding: 0;
   margin: 0;
@@ -90,13 +89,58 @@ h6 {
   font-weight: 400;
 }
 
-/*--------------------*/
+/*ui*/
 .ibg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+/*main*/
+.wraper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  font-size: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-screen {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  position: relative;
+}
+
+.main-screen__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*header*/
 .header {
   position: absolute;
   width: 100%;
@@ -177,45 +221,24 @@ h6 {
   letter-spacing: 2.6px;
 }
 
-.wraper {
-  overflow: hidden;
-  min-height: 100%;
+/*examples*/
+body {
+  width: 600px;
+  height: 600px;
 }
 
-.container {
-  max-width: 1130px;
-  padding: 0 15px;
-}
-
-.page {
+.big {
   position: absolute;
+  top: 100px;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
-  font-size: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background: #000;
 }
 
-.main-screen {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+.small {
   position: relative;
-}
-
-.main-screen__bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  top: 100px;
+  width: 500px;
+  height: 500px;
+  background: #666;
 }
